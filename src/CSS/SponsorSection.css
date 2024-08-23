@@ -1,0 +1,40 @@
+.sponsor-section {
+    overflow: hidden;
+    width: 100%;
+    background-color: transparent; /* Optional background color */
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+  .sponsor-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Ensure logos do not wrap */
+    width: 200%; /* Adjust based on the number of logos */
+    animation: scroll 20s linear infinite; /* Adjust duration for desired speed */
+  }
+  
+  .sponsor-logo {
+    flex: 0 0 auto;
+    margin: 0 1rem; /* Adjust spacing between logos as needed */
+  }
+  
+  .sponsor-logo img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+    height: 50px; /* Adjust logo size as needed */
+  }
+  
+  .sponsor-logo img:hover {
+    filter: grayscale(0%);
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
