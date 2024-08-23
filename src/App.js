@@ -2,10 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar.js';
 import SponsorSection from './components/ads/SponsorSection.js';
+import DigitalMarketingSection from './components/main/DigitalMarketingSection.js';
+import './App.css';
 
 function App() {
   return (
-    <Router>
+    <div className='container'>
+      <div style={{maxWidth: "1440px", width: "100%"}}>
+      <Router>
       <Navbar />
       <Routes>
         <Route path="/about-us" element={<div>About Us</div>} />
@@ -16,8 +20,11 @@ function App() {
         <Route path="/request-quote" element={<div>Request Quote</div>} />
         <Route path="/" element={<div>Home</div>} />
       </Routes>
+      <DigitalMarketingSection />
       <SponsorSection />
     </Router>
+      </div>
+    </div>
   );
 }
 

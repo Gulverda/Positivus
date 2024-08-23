@@ -1,0 +1,96 @@
+.digital-marketing-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .content h1 {
+    max-width: 530px;
+    font-size: 60px;
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    max-width: 500px;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #333;
+    color: #f5f5f5;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .cta-button:hover {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+    transition: all 0.3s ease;
+  }
+  
+  .illustration {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 100px;
+  }
+
+
+  @media screen and (max-width: 970px) {
+    .digital-marketing-section {
+      flex-direction: column;
+    }
+  
+    .content {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .content h1 {
+      font-size: 3rem;
+    }
+  
+    .content p {
+      font-size: 1.5rem;
+    }
+  
+    .illustration {
+      width: 100%;
+      padding: 0 !important;
+    }
+    
+    .illustration img {
+        width: 450px;
+        height: 370px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .content h1 {
+      font-size: 2.5rem;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+    }
+
+    .illustration img {
+        width: 400px;
+        height: 320px;
+    }
+  }

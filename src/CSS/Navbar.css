@@ -42,7 +42,9 @@
   }
   
   .navbar-button .request-quote-btn:hover {
-    background-color: rgba(2, 32, 2, 0.721);
+    background-color: #333;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
   }
   
   /* Burger Menu */
