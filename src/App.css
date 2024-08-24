@@ -1,3 +1,23 @@
+/* Default Light Mode Styles */
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #1a73e8;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --link-color: #bb86fc;
+}
+
+/* Add this to your CSS file */
+html {
+  scroll-behavior: smooth;
+}
+
+
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +26,8 @@
 
 body{
   height: 100dvh;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .container{
@@ -13,4 +35,18 @@ body{
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Additional styles for the dark mode */
+[data-theme="dark"] .navbar {
+  background-color: #1f1f1f;
+}
+
+/* Example of using the dark mode on a specific element */
+[data-theme="dark"] .navbar-button {
+  background-color: #333333;
 }

@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar.js';
 import SponsorSection from './components/ads/SponsorSection.js';
 import DigitalMarketingSection from './components/main/DigitalMarketingSection.js';
 import './App.css';
+import Services from './components/services/Services.js';
 
 function App() {
   return (
@@ -18,10 +19,15 @@ function App() {
         <Route path="/pricing" element={<div>Pricing</div>} />
         <Route path="/blog" element={<div>Blog</div>} />
         <Route path="/request-quote" element={<div>Request Quote</div>} />
-        <Route path="/" element={<div>Home</div>} />
+        <Route path="/" element={<div></div>} />
       </Routes>
-      <DigitalMarketingSection />
+      <section id='home'>
+        <DigitalMarketingSection />
+      </section>
       <SponsorSection />
+      <section id='services'>
+        <Services />
+      </section>
     </Router>
       </div>
     </div>
