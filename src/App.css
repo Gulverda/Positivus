@@ -50,3 +50,20 @@ a {
 [data-theme="dark"] .navbar-button {
   background-color: #333333;
 }
+
+#about-us,
+#pricing,
+#services,
+#use-cases {  
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 970px) {
+  #about-us,
+  #pricing,
+  #services,
+  #use-cases{
+    padding: 0 20px;
+  }
+  
+}

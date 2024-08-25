@@ -82,6 +82,10 @@
   }
   
   @media (max-width: 970px) {
+    .navbar-logo svg{
+      width: 200px;
+    }
+
     .navbar-links li {
       text-align: center;
     }
@@ -118,3 +122,9 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+    .navbar-logo svg{
+      width: 150px;
+    }
+}
