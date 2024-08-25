@@ -7,6 +7,8 @@ import './App.css';
 import Services from './components/services/Services.jsx';
 import CaseStudies from './components/Swiper.jsx';
 import Accordion from './components/Accordion.jsx';
+import Team from './components/Team.jsx';
+// import ContactUs from './components/ContactUs.jsx';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <section id='pricing'>
             <Accordion />
           </section>
+          <Team />
+          {/* <ContactUs /> */}
         </Router>
       </div>
     </div>
