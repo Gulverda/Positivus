@@ -1,0 +1,125 @@
+.case-studies {
+    padding: 40px;
+    /* background-color: #f8f9fa; */
+    /* background-color: #191A23; */
+  }
+
+  .case-study-card p {
+    text-align: left;
+}
+
+.case-study-card a{
+    display: block;
+    text-align: left;
+}
+
+.case-study-card {
+    max-width: 1200px;
+    margin-right: 0 !important;
+  }
+  
+  .case-studies-header {
+    text-align: left;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .case-studies-title {
+    font-size: 36px;
+    color: #333;
+    display: inline-block;
+    background-color: #a8ff00;
+    padding: 0 7px;
+    border-radius: 7px;
+  }
+  
+  .case-studies-subtitle {
+    font-size: 18px;
+    color: #191A23;
+    margin-top: 10px;
+    max-width: 580px;
+  }
+  
+  .case-studies-content {
+    display: flex;
+    justify-content: center;
+    background-color: #191A23;
+    padding: 70px 60px;
+    border-radius: 45px;
+  }
+  
+  .case-study-card {
+    background-color: #191A23;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    max-width: 300px;
+  }
+  
+  .case-study-card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a8ff00; /* Green color */
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+  }
+
+  .swiper-slide .swiper-slide-active{
+    margin-right: 0 !important;
+  }
+  
+  @media (min-width: 768px) {
+    .case-study-card {
+      margin-right: 15px;
+    }
+  
+    .case-studies-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+
+  @media (max-width: 970px) {
+    .case-studies-header {
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .swiper-slide{
+        display: flex !important;
+        justify-content: center;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .case-studies-content {
+      padding: 25px 21px;
+    }
+
+    .case-study-card p {
+        text-align: left;
+    }
+
+    .case-study-card a{
+        display: block;
+        text-align: left;
+    }
+
+
+  }

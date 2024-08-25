@@ -5,6 +5,7 @@ import SponsorSection from './components/ads/SponsorSection.js';
 import DigitalMarketingSection from './components/main/DigitalMarketingSection.js';
 import './App.css';
 import Services from './components/services/Services.js';
+import CaseStudies from './components/Swiper.js';
 
 function App() {
   return (
@@ -21,13 +22,14 @@ function App() {
         <Route path="/request-quote" element={<div>Request Quote</div>} />
         <Route path="/" element={<div></div>} />
       </Routes>
-      <section id='home'>
+      <section id='about-us'>
         <DigitalMarketingSection />
       </section>
       <SponsorSection />
       <section id='services'>
         <Services />
       </section>
+      <CaseStudies />
     </Router>
       </div>
     </div>
