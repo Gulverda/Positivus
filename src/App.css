@@ -18,19 +18,19 @@ html {
 }
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box
 }
 
-body{
+body {
   height: 100dvh;
   background-color: var(--background-color);
   color: var(--text-color);
 }
 
-.container{
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,16 +54,19 @@ a {
 #about-us,
 #pricing,
 #services,
-#use-cases {  
+#use-cases,
+#team {
   padding: 0 40px;
 }
 
 @media screen and (max-width: 970px) {
+
   #about-us,
   #pricing,
   #services,
-  #use-cases{
+  #use-cases,
+  #team {
     padding: 0 20px;
   }
-  
+
 }

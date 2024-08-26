@@ -38,7 +38,9 @@ function App() {
           <section id='pricing'>
             <Accordion />
           </section>
-          <Team />
+          <section id='team'>
+            <Team />
+          </section>
           {/* <ContactUs /> */}
         </Router>
       </div>
