@@ -2,7 +2,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/css/navigation'; // Import navigation styles
+import { Navigation } from 'swiper/modules'; // Import navigation module
 import '../CSS/CaseStudies.css'; // Custom styles
 
 const caseStudiesData = [
@@ -33,12 +34,14 @@ const CaseStudies = () => {
             <div className="case-studies-content">
                 <Swiper
                     spaceBetween={30}
-                    slidesPerView={1}
+                    slidesPerView={1.3}
                     breakpoints={{
                         768: { // for tablets and above
                             slidesPerView: 3,
                         },
                     }}
+                    navigation={true} // Enable navigation
+                    modules={[Navigation]} // Add navigation module
                 >
                     {caseStudiesData.map((study, index) => (
                         <SwiperSlide key={index}>

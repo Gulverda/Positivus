@@ -8,6 +8,8 @@ import Services from './components/services/Services.jsx';
 import CaseStudies from './components/Swiper.jsx';
 import Accordion from './components/Accordion.jsx';
 import Team from './components/Team.jsx';
+import Testimonials from './components/Testimonials.jsx';
+import Footer from './components/Footer.jsx';
 // import ContactUs from './components/ContactUs.jsx';
 
 function App() {
@@ -41,6 +43,10 @@ function App() {
           <section id='team'>
             <Team />
           </section>
+          <section id='testimonials'>
+            <Testimonials />
+          </section>
+            <Footer />
           {/* <ContactUs /> */}
         </Router>
       </div>

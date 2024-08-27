@@ -103,11 +103,20 @@
 
     .swiper-slide{
         display: flex !important;
-        justify-content: center;
+        justify-content: center !important;
     }
   }
 
   @media (max-width: 768px) {
+    .case-studies-content {
+      background-color: transparent;
+    }
+
+    .case-study-card{
+        border-radius: 45px;
+        padding: 42px 50px;
+    }
+    
     .case-studies-title{
         font-size: 24px;
     }
@@ -117,17 +126,16 @@
     }
 
     .case-studies-content {
-      padding: 25px 21px;
+      padding: 0;
     }
 
     .case-study-card p {
         text-align: left;
+        font-size: 12px;
     }
 
     .case-study-card a{
         display: block;
         text-align: left;
     }
-
-
   }

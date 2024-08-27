@@ -146,4 +146,8 @@
     .see-all-team {
       font-size: 14px;
     }
+
+    .team-title {
+      font-size: 24px !important;
+    }
   }

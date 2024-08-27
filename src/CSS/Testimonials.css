@@ -1,0 +1,139 @@
+.testimonial-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 84px;
+    border-radius: 45px;
+    background-color: #191A23;
+}
+
+.testimonial-swiper {
+    /* max-width: 600px; */
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    padding: 48px 52px !important;
+    border: 2px solid #B9FF66;
+    background-color: #191A23;
+    padding: 20px;
+    border-radius: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    bottom: -20px; /* Position the triangle */
+    left: 40px; /* Adjust the position as needed */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #B9FF66;
+}
+
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    bottom: -16px; /* Position the triangle */
+    left: 40px; /* Adjust the position as needed */
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #191A23;
+}
+
+.test_head p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+    /* font-style: italic; */
+}
+
+.swiper-pagination-fraction, .swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet {
+    position: relative;
+    top: 0px !important;
+}
+
+.test_head h3 {
+    font-size: 18px;
+    color: #B9FF66;
+    margin: 0;
+}
+
+.testimonial-card p:last-child {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.swiper-pagination{
+    position: relative;
+}
+
+
+/* Basic styles for Swiper pagination bullets */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #fff; /* Change color as needed */
+    border-radius: 50%;
+    position: relative;
+    margin: 0 4px;
+    display: inline-block;
+    top: -70px;
+    border: 2px solid #B9FF66; /* Change color as needed */
+    transform: rotate(45deg); /* Rotate to create star shape */
+  }  
+
+  .swiper-button-next,
+  .swiper-button-prev {
+      color: #B9FF66; /* Customize arrow color */
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    position: relative;
+    z-index: 1;
+    top: 150px;
+    font-size: 20px; /* Customize arrow size */
+  }
+  
+
+  @media screen and (max-width: 970px) {
+    .testimonial-card{
+        border-radius: 30px;
+    }
+    .test_head{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper-slide{
+        flex-direction: column;
+    }
+
+    .testimonial-section {
+        height: 100%;
+        padding: 20px;
+        /* background-color: transparent; */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none !important;
+    }
+
+    .testimonial-card {
+        padding: 24px 26px !important;
+    }
+  }
+
+
+  

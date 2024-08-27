@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../CSS/Team.css'; // External CSS for styling
-import team1 from '../assets/team/team1.svg'; 
-import team2 from '../assets/team/team2.svg';
-import team3 from '../assets/team/team3.svg';
-import team4 from '../assets/team/team4.svg';
-import team5 from '../assets/team/team5.svg';
-import team6 from '../assets/team/team6.svg';
+import team1 from '../assets/team/Team1.png'; 
+import team2 from '../assets/team/Team2.png';
+import team3 from '../assets/team/Team3.png';
+import team4 from '../assets/team/Team4.png';
+import team5 from '../assets/team/Team5.png';
+import team6 from '../assets/team/Team6.png';
 
 const Team = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
