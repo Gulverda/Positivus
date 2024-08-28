@@ -10,7 +10,7 @@ import Accordion from './components/Accordion.jsx';
 import Team from './components/Team.jsx';
 import Testimonials from './components/Testimonials.jsx';
 import Footer from './components/Footer.jsx';
-// import ContactUs from './components/ContactUs.jsx';
+import ContactUs from './components/ContactUs.jsx';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
             <Route path="/use-cases" element={<div>Use Cases</div>} />
             <Route path="/pricing" element={<div>Pricing</div>} />
             <Route path="/blog" element={<div>Blog</div>} />
-            <Route path="/request-quote" element={<div>Request Quote</div>} />
+            <Route path="/contact-us" element={<div>Request Quote</div>} />
             <Route path="/" element={<div></div>} />
           </Routes>
           <section id='about-us'>
@@ -46,8 +46,10 @@ function App() {
           <section id='testimonials'>
             <Testimonials />
           </section>
+          <section id='contact-us'>
+            <ContactUs />
+          </section>
             <Footer />
-          {/* <ContactUs /> */}
         </Router>
       </div>
     </div>

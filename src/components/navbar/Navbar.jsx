@@ -47,7 +47,7 @@ const Navbar = () => {
                     <li><a href="#blog">Blog</a></li>
                     <li>
                         <div className="navbar-button">
-                            <a href="#request-quote" className="request-quote-btn">Request Quote</a>
+                            <a href="#contact-us" className="request-quote-btn">Request Quote</a>
                         </div>
                     </li>
                 </ul>

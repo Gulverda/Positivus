@@ -229,5 +229,9 @@
         position: absolute;
         bottom: 0;
     }
+
+    .footer-button {
+        font-size: 18px;
+    }
     
   }
