@@ -53,6 +53,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-burger" onClick={toggleMenu}>
+            <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
+            <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
+
                 <div className={`burger-bar ${isOpen ? 'open' : ''}`}></div>
             </div>
         </nav>

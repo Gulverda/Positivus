@@ -78,7 +78,7 @@
   }
   
   .burger-bar.open:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
   }
   
   @media (max-width: 970px) {
